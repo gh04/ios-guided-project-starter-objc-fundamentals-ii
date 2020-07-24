@@ -25,6 +25,10 @@
 // will remove this portion of the app from the final app.
 //        pre-process conditional
 #ifdef DEBUG
+        //will show band-aid
+        // FIXME: Test Mode (Remove for production)
+  //A forever warning custom message
+#pragma message "This should be eventually removed!"
         [self addTestData];
 #endif
     }
@@ -43,6 +47,8 @@
     [_internalTips addObject:[[LSITip alloc] initWithName:@"Pizza"
                                                     total:30. splitCount:8 tipPercentage:25.]];
 }
+#pragma mark - Convenience Accessors
+// MARK: -  Convience acessors
 //when something is readyonly it becomes a method
 //implementing the getter. getting rid of that instance property for you.
 -(NSArray<LSITip *> *)tips

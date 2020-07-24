@@ -25,10 +25,14 @@
     return self;
 }
 //when something is readyonly it becomes a method
-//implementing the getter. getting rid of that instance property for you. 
+//implementing the getter. getting rid of that instance property for you.
 -(NSArray<LSITip *> *)tips
 {
     return _internalTips.copy;
 }
-
+//deriving it's value from somewhere else
+- (NSUInteger)tipCount
+{
+    return _internalTips.count;
+}
 @end

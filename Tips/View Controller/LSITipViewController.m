@@ -8,8 +8,8 @@
 
 #import "LSITipViewController.h"
 #import "LSITipController.h"
-
-@interface LSITipViewController ()
+//better to conform here
+@interface LSITipViewController () <UITableViewDataSource, UITableViewDelegate>
 
 // Private Properties
 @property (nonatomic) double total;

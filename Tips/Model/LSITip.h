@@ -13,12 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 //reference types
 @interface LSITip : NSObject
 
-//creates a copy a mutabled 
+//creates a copy a mutabled
 @property (nonatomic, readonly, copy) NSString *name;
 @property (nonatomic, readonly) double total;
 @property (nonatomic, readonly) NSInteger splitCount;
 @property (nonatomic, readonly) double tipCount;
 
+-(instancetype)initWithName:(NSString *)aName
+                      total:(double)aTotal splitCount:(NSInteger)aSplitCount tipPercentage:(double)aTipPercentage;
 
 @end
 

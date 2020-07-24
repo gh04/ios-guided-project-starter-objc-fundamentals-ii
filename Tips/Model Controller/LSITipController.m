@@ -21,6 +21,7 @@
 - (instancetype)init
 {
     if (self =[super init]) {
+        //[] method syntax
         _internalTips = [[NSMutableArray alloc] init];
 // will remove this portion of the app from the final app.
 //        pre-process conditional

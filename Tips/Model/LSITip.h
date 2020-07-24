@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, copy) NSString *name;
 @property (nonatomic, readonly) double total;
 @property (nonatomic, readonly) NSInteger splitCount;
-@property (nonatomic, readonly) double tipCount;
+@property (nonatomic, readonly) double tipPercentage;
 
 -(instancetype)initWithName:(NSString *)aName
                       total:(double)aTotal splitCount:(NSInteger)aSplitCount tipPercentage:(double)aTipPercentage;

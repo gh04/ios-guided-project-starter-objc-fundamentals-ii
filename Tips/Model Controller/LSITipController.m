@@ -22,7 +22,11 @@
 {
     if (self =[super init]) {
         _internalTips = [[NSMutableArray alloc] init];
+// will remove this portion of the app from the final app.
+//        pre-process conditional
+#ifdef DEBUG
         [self addTestData];
+#endif
     }
     return self;
 }

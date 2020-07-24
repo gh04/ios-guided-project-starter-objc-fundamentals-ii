@@ -7,7 +7,28 @@
 //
 
 #import "LSITipController.h"
+//our own instance variables
+
+@interface LSITipController () {
+    NSMutableArray *_internalTips;
+}
+
+@end
 
 @implementation LSITipController
+
+- (instancetype)init
+{
+    if (self =[super init]) {
+        _internalTips = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+//when something is readyonly it becomes a method
+//implementing the getter. getting rid of that instance property for you. 
+-(NSArray<LSITip *> *)tips
+{
+    return _internalTips.copy;
+}
 
 @end

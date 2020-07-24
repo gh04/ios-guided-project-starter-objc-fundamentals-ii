@@ -7,13 +7,25 @@
 //
 
 #import "LSITipViewController.h"
+#import "LSITipController.h"
 
 @interface LSITipViewController ()
 
 // Private Properties
+@property (nonatomic) double total;
+@property (nonatomic) int split;
+@property (nonatomic) double percentage;
+@property (nonatomic) double tip;
+@property (nonatomic) LSITipController *tipController;
 
 // Private IBOutlets
-
+@property (nonatomic) IBOutlet UITextField *totalTextField;
+@property (nonatomic) IBOutlet UILabel *splitLabel;
+@property (nonatomic) IBOutlet UILabel *tipLabel;
+@property (nonatomic) IBOutlet UILabel *percentageLabel;
+@property (nonatomic) IBOutlet UIStepper *splitStepper;
+@property (nonatomic) IBOutlet UISlider *percentageSlider;
+@property (nonatomic) IBOutlet UITableView *tableView;
 // Private Methods
 
 @end
